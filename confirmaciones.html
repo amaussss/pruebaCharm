@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Confirmaciones de asistencia para boda | Mi Webdding</title>
+<meta name="description" content="Centraliza confirmaciones, pases, acompañantes y mesas desde el panel de Mi Webdding. Organiza a tus invitados sin perderte entre mensajes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--iv:#FAF7F2;--ink:#2B2623;--mut:#5E564F;--gold:#B08D57;--gt:#8A6A35;--rose:#D9B8B0;--sage:#8A9A86;--line:#E6DED2;--ok:#4F8A5B;--sh:0 12px 32px rgba(43,38,35,.08);--serif:'Cormorant Garamond',Georgia,serif;--sans:Inter,system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:400 17px/1.6 var(--sans);color:var(--ink);background:#fff}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;margin:0}
+h1{font-size:clamp(2.8rem,6vw,4.2rem)}h2{font-size:clamp(2.1rem,4vw,2.75rem)}h3{font-size:1.6rem}
+p{margin:0}a{color:inherit}
+:focus-visible{outline:3px solid var(--gt);outline-offset:3px}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:112px 0}.alt{background:var(--iv)}
+.eb{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gt);font-weight:600;margin-bottom:14px}
+.lead{color:var(--mut);max-width:60ch;margin-top:16px}
+.hd{margin-bottom:48px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;border-radius:999px;font:600 .95rem var(--sans);text-decoration:none;border:1.5px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:#4a403a}.btn.o{background:transparent;color:var(--ink)}.btn.o:hover{background:var(--ink);color:#fff}
+.btn.g{background:#fff;color:var(--ink);border-color:#fff}.btn.g:hover{background:var(--iv)}
+.lk{color:var(--gt);font-weight:600;text-decoration:none}.lk:hover{text-decoration:underline}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;box-shadow:var(--sh)}
+.grid{display:grid;gap:28px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:1fr 1fr;align-items:center;gap:64px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo{font:600 1.7rem var(--serif);text-decoration:none}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:.95rem}
+nav a{text-decoration:none}nav a:hover{color:var(--gt)}
+.nb{display:none;background:none;border:1px solid var(--line);border-radius:12px;width:48px;height:48px;font-size:1.3rem}
+.hero{padding:88px 0 72px;background:var(--iv)}
+.hero .g2{gap:48px}
+.ck{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px 24px;font-size:.95rem;color:var(--mut)}
+.ck li:before{content:"✓";color:var(--ok);font-weight:700;margin-right:8px}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.ph{width:290px;margin:0 auto;border:10px solid var(--ink);border-radius:42px;background:linear-gradient(170deg,var(--rose),#f3e6dc 55%,var(--sage));aspect-ratio:9/18;position:relative;box-shadow:var(--sh);display:flex;flex-direction:column;justify-content:flex-end;padding:26px;text-align:center}
+.ph b{font:500 2.2rem/1 var(--serif);display:block}.ph span{font-size:.85rem;color:var(--mut)}
+.chip{position:absolute;background:#fff;border-radius:16px;padding:12px 16px;font-size:.82rem;box-shadow:var(--sh);text-align:left;line-height:1.35}
+.chip b{font:600 .85rem var(--sans);display:block;color:var(--ink)}
+.c1{left:-70px;top:90px}.c2{right:-70px;bottom:120px}
+.met{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px;text-align:center}
+.met b{font:500 2.6rem/1 var(--serif);color:var(--gt);display:block}.met span{font-size:.9rem;color:var(--mut)}
+.ex .im{height:200px;border-radius:14px;margin-bottom:20px}
+.ex p{color:var(--mut);font-size:.95rem;margin:8px 0 16px}.ex small{font-weight:600;color:var(--gt)}
+.pk{display:flex;flex-direction:column}.pk ul{list-style:none;padding:0;margin:20px 0 28px;flex:1;display:grid;gap:10px;font-size:.95rem}
+.pk li:before{content:"✓";color:var(--ok);font-weight:700;margin-right:10px}.pk li.no{color:var(--mut)}.pk li.no:before{content:"—";color:var(--mut)}
+.pk p{color:var(--mut);font-size:.95rem;margin-top:10px}
+.rec{border:2px solid var(--gold)}.badge{align-self:flex-start;background:var(--gold);color:#fff;font-size:.78rem;font-weight:600;border-radius:999px;padding:4px 14px;margin-bottom:14px}
+.help{margin-top:40px;text-align:center;color:var(--mut)}
+.st{counter-reset:s}.st .card{counter-increment:s}.st .card:before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;font:500 1.3rem var(--serif);margin-bottom:18px}
+.st p{color:var(--mut);margin-top:10px}
+.time{margin-top:28px;background:var(--ink);color:#fff;border-radius:20px;padding:28px 32px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.time b{font:500 2rem var(--serif);color:var(--rose)}.time p{color:#e4dcd2;flex:1;min-width:240px;font-size:.95rem}
+.dash{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--sh)}
+.dash .r{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.dash .r div{background:var(--iv);border-radius:14px;padding:16px;font-size:.8rem;color:var(--mut)}
+.dash .r b{display:block;font:500 2.2rem/1.1 var(--serif);color:var(--ink)}
+.bar{height:8px;border-radius:8px;background:var(--line);margin-top:20px;overflow:hidden}.bar i{display:block;width:78%;height:100%;background:var(--gold)}
+.qr{aspect-ratio:4/3;border-radius:20px;background:linear-gradient(135deg,var(--sage),var(--rose));display:grid;place-items:center;position:relative}
+.qr div{background:#fff;border-radius:16px;padding:18px;text-align:center;font-size:.85rem;color:var(--mut)}
+.qr svg{display:block;margin:0 auto 8px}
+.tb{margin-top:96px}
+.vid{aspect-ratio:16/10;border-radius:20px;background:linear-gradient(135deg,var(--rose),#f3e6dc);display:grid;place-items:center}
+.play{width:72px;height:72px;border-radius:50%;background:#fff;border:0;box-shadow:var(--sh);font-size:1.5rem;color:var(--ink)}
+.q{font:italic 500 1.45rem/1.3 var(--serif);margin:14px 0 22px}.st5{color:var(--gold);letter-spacing:3px}
+.q+p{font-size:.9rem;color:var(--mut)}
+.chk{list-style:none;padding:0;margin:22px 0;display:grid;gap:8px;color:var(--mut)}.chk li:before{content:"✓";color:var(--ok);font-weight:700;margin-right:10px}
+.std{aspect-ratio:5/4;border-radius:20px;background:linear-gradient(160deg,#efe3d6,var(--rose) 60%,var(--sage));display:flex;align-items:flex-end;padding:28px;font:500 2rem var(--serif)}
+details{border-bottom:1px solid var(--line);padding:20px 0}summary{cursor:pointer;font:600 1.05rem var(--sans);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--gt)}details[open] summary::after{content:"−"}
+details p{color:var(--mut);margin-top:12px;max-width:70ch}
+.faq{max-width:820px;margin:0 auto}
+.fin{background:var(--ink);color:#fff;text-align:center}.fin .lead{margin:16px auto 0;color:#e4dcd2}.fin .btns{justify-content:center}
+.fin .btn.o{color:#fff;border-color:#fff}.fin .btn.o:hover{background:#fff;color:var(--ink)}
+footer{background:#fff;border-top:1px solid var(--line);padding:72px 0 32px;font-size:.92rem;color:var(--mut)}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+footer h4{margin:0 0 14px;font:600 .95rem var(--sans);color:var(--ink)}footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+footer a{text-decoration:none}footer a:hover{color:var(--gt)}
+.fb{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85rem}
+.wa{position:fixed;right:20px;bottom:20px;z-index:30;background:var(--ok);color:#fff;border-radius:999px;min-height:52px;padding:0 22px;display:flex;align-items:center;font-weight:600;text-decoration:none;box-shadow:var(--sh)}
+.hero .g2>*{animation:up .9s ease both}.hero .g2>*:nth-child(2){animation-delay:.2s}
+@keyframes up{from{opacity:0;transform:translateY(18px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+@media(max-width:992px){.g4{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr}.g2{grid-template-columns:1fr;gap:40px}.fg{grid-template-columns:1fr 1fr}.c1{left:-20px}.c2{right:-20px}.hide{display:none}}
+@media(max-width:768px){section{padding:64px 0}.hero{padding:56px 0 48px}.w{padding:0 20px}.nb{display:block}
+nav ul{display:none;position:absolute;left:0;right:0;top:76px;background:#fff;flex-direction:column;padding:12px 20px 24px;border-bottom:1px solid var(--line);gap:0}nav ul.open{display:flex}nav li a{display:block;padding:14px 0}
+.g4,.fg{grid-template-columns:1fr}.btn{width:100%}.met{grid-template-columns:1fr}.c1,.c2{display:none}.fb{flex-direction:column}}
+
+.fv{position:absolute;top:26px;right:26px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:1.25rem;cursor:pointer;color:var(--mut)}
+.fv[aria-pressed=true]{color:#B5475A;border-color:#B5475A}
+.ex{position:relative}.ex .im{height:230px;display:flex;align-items:flex-end;padding:16px;font:500 1.1rem var(--serif);color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.tg{font-size:.85rem;color:var(--gt);font-weight:600;margin-bottom:4px}.ex h3{margin-bottom:0}
+.sub{display:inline-block;font-size:.75rem;background:var(--iv);border:1px solid var(--line);border-radius:999px;padding:2px 12px;color:var(--mut);margin-bottom:10px}
+.bar2{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:28px;color:var(--mut)}
+.bar2 button{background:none;border:0;color:var(--gt);font:600 .95rem var(--sans);cursor:pointer;text-decoration:underline;min-height:44px}
+.note{margin-top:32px;font-size:.88rem;color:var(--mut);text-align:center}
+.pv{position:relative;height:380px}.pv .d{position:absolute;left:0;top:20px;width:82%;height:300px;border-radius:18px;background:linear-gradient(150deg,#1d3557,#6c88a8);box-shadow:var(--sh);padding:22px;color:#fff;font:500 1.7rem var(--serif);display:flex;align-items:flex-end}
+.pv .m{position:absolute;right:0;bottom:0;width:150px;height:290px;border:8px solid var(--ink);border-radius:28px;background:linear-gradient(170deg,#b8a98a,#6f7d5c);box-shadow:var(--sh);padding:14px;color:#fff;font:500 1.2rem var(--serif);display:flex;align-items:flex-end}
+.pk a.row{display:block;text-decoration:none}
+@media(max-width:768px){.pv{height:340px}}
+
+.dd{position:relative}.dd>button{background:none;border:0;font:inherit;color:inherit;cursor:pointer;padding:0;min-height:44px}
+.dd>button:after{content:" ▾";font-size:.75em}.dd>button:hover{color:var(--gt)}
+nav .dm{display:none;position:absolute;top:100%;left:-16px;width:340px;flex-direction:column;gap:0;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);padding:10px;z-index:40}
+.dd.open .dm,.dd:hover .dm{display:flex}
+.dm a{display:block;padding:12px 14px;border-radius:10px}.dm a:hover{background:var(--iv);color:var(--ink)}.dm b{display:block;font-weight:600}.dm span{display:block;font-size:.85rem;color:var(--mut)}
+@media(max-width:768px){nav .dm{position:static;width:auto;box-shadow:none;border:0;padding:0 0 0 12px}.dd:hover .dm{display:none}.dd.open .dm{display:flex}.dd>button{padding:14px 0;width:100%;text-align:left}}
+
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.pill{border-radius:999px;padding:2px 12px;font-size:.78rem;font-weight:600;white-space:nowrap}.ok2{background:#e3f1e6;color:#2f6b3d}.pe{background:#f6ecd5;color:#7a5a17}.no2{background:#f3dcd9;color:#8a3a30}
+.qa{display:grid;gap:10px;margin-top:18px}.qa div{background:var(--iv);border-radius:14px;padding:14px 16px;font-size:.85rem;color:var(--mut)}.qa b{display:block;color:var(--ink);font-size:.95rem}
+.cap{font-size:.82rem;color:var(--mut);margin-top:14px;text-align:center}
+.nt{margin-top:28px;background:#fff;border:1px solid var(--gold);border-radius:20px;padding:24px 28px}
+.tc h3{font-size:1.35rem;margin-bottom:8px}.tc p{color:var(--mut);font-size:.95rem}
+.q2{font:italic 500 1.5rem/1.3 var(--serif);margin:0 0 16px}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+<a class="logo" href="mi-webdding.html">Mi Webdding</a>
+<nav aria-label="Principal"><ul id="mn">
+<li><a href="mi-webdding.html#como-funciona">Cómo funciona</a></li><li><a href="ejemplos.html">Ejemplos</a></li><li class="dd"><button type="button" aria-haspopup="true" aria-expanded="false">Producto</button><ul class="dm"><li><a href="mi-webdding.html#como-funciona"><b>Invitación digital</b><span>La información de su boda en un enlace personalizado.</span></a></li><li><a href="confirmaciones.html" aria-current="page"><b>Confirmaciones e invitados</b><span>Respuestas, pases y mesas desde el panel de PRO y ULTRA.</span></a></li><li><a href="dpix-album-qr.html"><b>DPix Álbum QR</b><span>Fotos y videos de sus invitados reunidos mediante un QR.</span></a></li><li><a href="save-the-date.html"><b>Save the Date Web</b><span>Compartan la fecha antes de tener todos los detalles.</span></a></li></ul></li><li><a href="paquetes.html">Paquetes</a></li>
+</ul></nav>
+<a class="btn hide" href="https://wa.me/5214423641993?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20para%20mi%20Webdding.">Agendar por WhatsApp</a>
+<button class="nb" aria-label="Abrir menú" aria-expanded="false" onclick="var m=document.getElementById('mn');var o=m.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div></header>
+<main id="top">
+<section class="hero"><div class="w"><div class="g2">
+<div>
+<p class="eb">Confirmaciones de asistencia e invitados</p>
+<h1>Confirmaciones de boda, sin perderse entre mensajes.</h1>
+<p class="lead">Sepan quién viene, cuántos pases tiene y dónde se sentará. Con PRO y ULTRA, las respuestas desde su invitación se registran en un panel para organizar lo que sigue.</p>
+<div class="btns"><a class="btn" href="https://miwebdding.com/producto/webdding-pro/">Conocer Webdding PRO</a><a class="btn o" href="#como">Ver cómo funciona</a></div>
+<ul class="ck"><li>Respuestas registradas</li><li>Pases por invitación</li><li>Organización de mesas</li></ul>
+<p class="lead" style="font-size:.9rem">Incluido en PRO y ULTRA. Los invitados no necesitan descargar una app para confirmar.</p>
+</div>
+<div><div class="dash" role="img" aria-label="Vista ilustrativa del panel de invitados"><b style="font:500 1.4rem var(--serif)">Su lista, conectada con su invitación</b><br><small style="color:var(--mut)">Invitados · Confirmaciones · Pases · Mesas</small>
+<div class="qa"><div><b>¿Quién ya respondió?</b>Confirmados, pendientes y cancelados.</div><div><b>¿Cuántos lugares necesitan?</b>Pases para adultos y niños.</div><div><b>¿Dónde se sentará cada quien?</b>Mesas, capacidad y asignaciones.</div></div></div>
+<p class="cap">Panel de invitados · PRO · ULTRA</p></div>
+</div></div></section>
+
+<section id="como"><div class="w">
+<div class="hd"><p class="eb">De la invitación a la lista final</p><h2>Una respuesta es el comienzo. Después viene la organización.</h2><p class="lead">Su invitación recoge la respuesta. El panel les permite trabajar con esa información para preparar la boda.</p></div>
+<div class="grid g4 st">
+<div class="card"><h3>Preparen su lista</h3><p>Registren familias, parejas o personas. Definan los pases para adultos y niños de cada invitación.</p></div>
+<div class="card"><h3>Compartan su Webdding</h3><p>Sus invitados abren el enlace y responden desde la invitación, sin instalar una app.</p></div>
+<div class="card"><h3>Consulten las respuestas</h3><p>Revisen confirmados, pendientes y cancelados. Identifiquen a quién todavía necesitan contactar.</p></div>
+<div class="card"><h3>Organicen las mesas</h3><p>Definan capacidades y asignen personas a cada mesa mientras consultan los lugares disponibles.</p></div>
+</div>
+<div class="nt"><b>¿Alguien les respondió por otro medio?</b> Pueden actualizar su estado manualmente en el panel. El sistema no lee ni registra por sí solo sus conversaciones de WhatsApp.</div>
+</div></section>
+
+<section class="alt"><div class="w">
+<div class="hd"><p class="eb">Dos formas distintas de recibir respuestas</p><h2>Un botón de WhatsApp no es un sistema de confirmaciones.</h2><p class="lead">Ambas opciones ayudan a recibir respuestas. Lo que cambia es quién las registra y cómo organizan la información después.</p></div>
+<div class="grid g2" style="align-items:stretch;gap:28px">
+<article class="card pk"><h3>Webdding BASE</h3><p style="font-weight:600;color:var(--ink)">Reciban mensajes. Ustedes llevan el control.</p><p>La invitación incluye un botón que abre WhatsApp al número que indiquen. Los invitados les escriben para avisar si asistirán.</p>
+<ul><li>Botón directo al WhatsApp de los novios.</li><li>Registro y seguimiento manual de las respuestas.</li><li class="no">Sin sistema de confirmaciones, panel de invitados, control de pases ni mesas.</li></ul><a class="btn o" href="https://miwebdding.com/producto/mi-webdding/">Conocer BASE</a></article>
+<article class="card pk rec"><span class="badge">Para confirmar y organizar</span><h3>Webdding PRO · ULTRA</h3><p style="font-weight:600;color:var(--ink)">Reciban respuestas. Organicen desde el panel.</p><p>Los invitados responden desde la invitación. La respuesta queda registrada en el sistema para que ustedes administren su lista.</p>
+<ul><li>Confirmados, pendientes y cancelados en un solo lugar.</li><li>Invitados agrupados, integrantes y pases.</li><li>Mesas, asignación de personas e importación/exportación.</li></ul><div class="btns" style="margin-top:0"><a class="btn" href="https://miwebdding.com/producto/webdding-pro/">Conocer PRO</a><a class="btn o" href="paquetes.html">Comparar todos los paquetes</a></div></article>
+</div></div></section>
+
+<section><div class="w">
+<div class="hd"><p class="eb">Lo que resuelve el panel</p><h2>Dejen de reconstruir la lista cada vez que alguien responde.</h2><p class="lead">El valor no está solo en recibir un “sí”. Está en poder usar esa respuesta para organizar invitados, lugares y coordinación.</p></div>
+<div class="grid g3 tc">
+<div class="card"><h3>Grupos e integrantes</h3><p>Una familia, una pareja o una persona: organicen invitaciones agrupadas y consulten a sus integrantes.</p></div>
+<div class="card"><h3>Pases definidos</h3><p>Asignen pases para adultos y niños para llevar el control de cuántas personas están invitadas.</p></div>
+<div class="card"><h3>Estados de respuesta</h3><p>Consulten confirmados, pendientes y cancelados, con separación de adultos y niños.</p></div>
+<div class="card"><h3>Envíos y recordatorios</h3><p>Identifiquen pendientes y gestionen comunicaciones con las herramientas disponibles. Las condiciones de envío dependen del paquete y servicio vigente.</p></div>
+<div class="card"><h3>Mesas y lugares</h3><p>Creen mesas, definan capacidad y asignen personas sin perder de vista los lugares disponibles.</p></div>
+<div class="card"><h3>Importar y exportar</h3><p>Carguen información mediante plantillas y exporten su lista para coordinarse con su planner, banquete o equipo del evento.</p></div>
+</div></div></section>
+
+<section class="alt"><div class="w"><div class="grid g2">
+<div><p class="eb">Antes y durante la boda</p><h2>La lista no se queda en las confirmaciones.</h2><p class="lead">El panel reúne información que también sirve para organizar mesas, compartir la lista con su equipo y apoyar el acceso el día del evento.</p>
+<ul class="chk"><li>Invitados y pases para la coordinación.</li><li>Mesas y asignaciones para el acomodo.</li><li>Administración de pases QR para apoyar el acceso.</li></ul>
+<p class="lead" style="font-size:.95rem;margin:0 0 16px">La App es un complemento para novios, invitados y equipo de acceso; no es necesaria para que sus invitados confirmen.</p><a class="lk" href="https://miwebdding.com/app/">Conocer la App →</a></div>
+<div><div class="dash" role="img" aria-label="Vista ilustrativa de la lista de invitados y sus estados"><b style="font:500 1.3rem var(--serif)">Lista de invitados</b>
+<div class="row"><span>Invitación 1 · Mesa 1</span><span class="pill ok2">Confirmado</span></div>
+<div class="row"><span>Invitación 2 · Mesa 2</span><span class="pill pe">Pendiente</span></div>
+<div class="row"><span>Invitación 3 · Sin mesa</span><span class="pill no2">Cancelado</span></div>
+<div class="row" style="border:0"><span>Invitación 4 · Mesa 1</span><span class="pill ok2">Confirmado</span></div></div>
+<p class="cap">Vista del panel de Mi Webdding. Imagen de producto; no es una demostración interactiva.</p></div>
+</div></div></section>
+
+<section><div class="w"><div class="grid g2">
+<div class="qr" role="img" aria-label="DPix Álbum QR"><div><svg width="72" height="72" viewBox="0 0 8 8" fill="#2B2623" aria-hidden="true"><path d="M0 0h3v3H0zM5 0h3v3H5zM0 5h3v3H0zM4 4h1v1H4zM6 5h2v1H6zM5 7h1v1H5zM7 7h1v1H7z"/></svg>Recuerdos compartidos por invitados</div></div>
+<div><p class="eb">Su invitación también guarda recuerdos</p><h2>Y después del “sí”, los momentos compartidos.</h2><p class="lead">PRO y ULTRA incluyen DPix Álbum QR para reunir fotos y videos de sus invitados. Además, su Webdding comparte el itinerario y los detalles de la boda.</p><div class="btns"><a class="btn" href="dpix-album-qr.html">Conocer DPix Álbum QR</a></div></div>
+</div></div></section>
+
+<section class="alt"><div class="w">
+<div class="hd"><p class="eb">Experiencias de parejas</p><h2>La diferencia se nota al organizar de verdad.</h2></div>
+<div class="grid g2" style="align-items:stretch;gap:28px">
+<figure class="card" style="margin:0"><blockquote class="q2" style="margin-inline:0">“Nos facilitó muchísimo la organización de invitados, confirmaciones, cancelaciones y asignación de mesas.”</blockquote><p style="color:var(--mut);font-size:.9rem">Jacqueline Fuerte Garduño · Google</p></figure>
+<figure class="card" style="margin:0"><blockquote class="q2" style="margin-inline:0">“La invitación fue totalmente personalizable y el panel de invitados fue lo que me hizo decidirme por ellos.”</blockquote><p style="color:var(--mut);font-size:.9rem">Magdalena ZC · Google</p></figure>
+</div></div></section>
+
+<section id="faq"><div class="w faq">
+<div class="hd" style="text-align:center"><p class="eb">Resuelvan sus dudas</p><h2>Antes de preparar su lista.</h2><p class="lead" style="margin-inline:auto">Lo esencial para distinguir una respuesta por WhatsApp de un sistema conectado con su invitación.</p></div>
+<details><summary>¿Qué paquetes incluyen el sistema de confirmaciones?</summary><p>PRO y ULTRA incluyen el panel para administrar confirmaciones, invitados, pases y mesas. BASE incluye un botón al WhatsApp de los novios: ustedes reciben los mensajes y llevan el registro y seguimiento manualmente, sin sistema ni panel.</p></details>
+<details><summary>¿Mis invitados confirman en WhatsApp o en la invitación?</summary><p>Con PRO y ULTRA responden desde la invitación y la respuesta se registra en el panel. En BASE, el botón abre una conversación de WhatsApp al número que indiquen; el mensaje no se convierte en un registro de un sistema de confirmaciones.</p></details>
+<details><summary>¿Los invitados necesitan descargar una app?</summary><p>No. Pueden abrir el enlace de su invitación y responder desde ahí. La App complementa la experiencia con herramientas para el evento; no es un requisito para confirmar.</p></details>
+<details><summary>¿Puedo registrar familias, parejas, adultos y niños?</summary><p>Sí. Pueden organizar la lista por invitación o grupo, identificar a sus integrantes y asignar pases para adultos y niños.</p></details>
+<details><summary>¿Qué pasa si alguien confirma o cancela por otro medio?</summary><p>Pueden actualizar manualmente su estado en el panel. Los mensajes que reciben por WhatsApp, llamadas u otros medios no se leen ni registran automáticamente en el sistema.</p></details>
+<details><summary>¿Puedo enviar recordatorios a quienes están pendientes?</summary><p>PRO y ULTRA incluyen herramientas de comunicación y recordatorio. Las condiciones de envío dependen del paquete y del servicio vigente; consulten con el equipo si necesitan confirmar una modalidad o volumen específico.</p></details>
+<details><summary>¿También puedo organizar mesas y descargar mi lista?</summary><p>Sí. El panel permite crear mesas, definir capacidades y asignar personas. También pueden importar y exportar invitados para coordinar la información con su planner, banquete o equipo.</p></details>
+</div></section>
+
+<section class="fin"><div class="w">
+<p class="eb" style="color:var(--rose)">Su invitación, con herramientas para organizar</p>
+<h2>Inviten con su estilo. Organicen con más claridad.</h2>
+<p class="lead">Conozcan PRO para reunir invitación personalizada, sistema de confirmaciones, invitados, pases, mesas y DPix Álbum QR. ULTRA añade Save the Date Web y dominio .COM exclusivo sujeto a disponibilidad.</p>
+<div class="btns"><a class="btn g" href="https://miwebdding.com/producto/webdding-pro/">Conocer Webdding PRO</a><a class="btn o" href="paquetes.html">Comparar paquetes</a></div>
+<p style="margin-top:24px"><a class="lk" style="color:var(--rose)" href="https://wa.me/5214423641993?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20para%20mi%20Webdding.">Agendar por WhatsApp</a> · <a class="lk" style="color:var(--rose)" href="mailto:hola@miwebdding.com?subject=Quiero%20agendar%20una%20asesor%C3%ADa%20para%20mi%20Webdding">Escribir por correo</a></p>
+</div></section>
+</main>
+<footer><div class="w">
+<div class="fg">
+<div><a class="logo" href="mi-webdding.html" style="color:var(--ink)">Mi Webdding</a><p style="margin:12px 0">Invitaciones digitales para boda, personalizadas con sus fotos, colores y detalles. Ustedes la comparten; nosotros la preparamos.</p><p><a href="mailto:hola@miwebdding.com?subject=Quiero%20agendar%20una%20asesor%C3%ADa%20para%20mi%20Webdding">hola@miwebdding.com</a><br><a href="https://wa.me/5214423641993?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20para%20mi%20Webdding.">+52 442 364 1993</a></p></div>
+<div><h4>Mi Webdding</h4><ul><li><a href="paquetes.html">Paquetes y precios</a></li><li><a href="confirmaciones.html">Confirmaciones e invitados</a></li><li><a href="dpix-album-qr.html">DPix · Álbum QR</a></li><li><a href="save-the-date.html">Save the Date Web</a></li></ul></div>
+<div><h4>Descubre</h4><ul><li><a href="ejemplos.html">Ejemplos</a></li><li><a href="https://miwebdding.com/blog/">Ideas para tu boda</a></li><li><a href="https://miwebdding.com/contacto/">Contacto</a></li></ul></div>
+<div><h4>Los acompañamos</h4><ul><li>Personalización incluida</li><li>Acompañamiento real</li><li>Agenden por WhatsApp o correo</li><li>También en David’s Bridal México</li></ul></div>
+</div>
+<div class="fb"><span>© 2026 Mi Webdding. Todos los derechos reservados.</span><span><a href="https://miwebdding.com/terminos-y-condiciones/">Términos</a> · <a href="https://miwebdding.com/aviso-de-privacidad/">Privacidad</a> · <a href="https://miwebdding.com/app/">App</a></span></div>
+</div></footer>
+<a class="wa" href="https://wa.me/5214423641993?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20Mi%20Webdding.">WhatsApp</a>
+<script>
+(function(){var d=document.querySelector('.dd'),b=d.querySelector('button');
+function s(o){d.classList.toggle('open',o);b.setAttribute('aria-expanded',o)}
+b.onclick=function(){s(!d.classList.contains('open'))};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')s(false)});
+document.addEventListener('click',function(e){if(!d.contains(e.target))s(false)})})();
+</script>
+</body>
+</html>

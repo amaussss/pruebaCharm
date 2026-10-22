@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Álbum QR para fotos y videos de boda | Mi Webdding</title>
+<meta name="description" content="Reúne las fotos y videos de tus invitados con un QR, consérvalos en resolución original y descárgalos juntos. Conoce DPix de Mi Webdding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--iv:#FAF7F2;--ink:#2B2623;--mut:#5E564F;--gold:#B08D57;--gt:#8A6A35;--rose:#D9B8B0;--sage:#8A9A86;--line:#E6DED2;--ok:#4F8A5B;--sh:0 12px 32px rgba(43,38,35,.08);--serif:'Cormorant Garamond',Georgia,serif;--sans:Inter,system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:400 17px/1.6 var(--sans);color:var(--ink);background:#fff}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;margin:0}
+h1{font-size:clamp(2.8rem,6vw,4.2rem)}h2{font-size:clamp(2.1rem,4vw,2.75rem)}h3{font-size:1.6rem}
+p{margin:0}a{color:inherit}
+:focus-visible{outline:3px solid var(--gt);outline-offset:3px}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:112px 0}.alt{background:var(--iv)}
+.eb{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gt);font-weight:600;margin-bottom:14px}
+.lead{color:var(--mut);max-width:60ch;margin-top:16px}
+.hd{margin-bottom:48px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;border-radius:999px;font:600 .95rem var(--sans);text-decoration:none;border:1.5px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:#4a403a}.btn.o{background:transparent;color:var(--ink)}.btn.o:hover{background:var(--ink);color:#fff}
+.btn.g{background:#fff;color:var(--ink);border-color:#fff}.btn.g:hover{background:var(--iv)}
+.lk{color:var(--gt);font-weight:600;text-decoration:none}.lk:hover{text-decoration:underline}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;box-shadow:var(--sh)}
+.grid{display:grid;gap:28px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:1fr 1fr;align-items:center;gap:64px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo{font:600 1.7rem var(--serif);text-decoration:none}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:.95rem}
+nav a{text-decoration:none}nav a:hover{color:var(--gt)}
+.nb{display:none;background:none;border:1px solid var(--line);border-radius:12px;width:48px;height:48px;font-size:1.3rem}
+.hero{padding:88px 0 72px;background:var(--iv)}
+.hero .g2{gap:48px}
+.ck{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px 24px;font-size:.95rem;color:var(--mut)}
+.ck li:before{content:"✓";color:var(--ok);font-weight:700;margin-right:8px}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.ph{width:290px;margin:0 auto;border:10px solid var(--ink);border-radius:42px;background:linear-gradient(170deg,var(--rose),#f3e6dc 55%,var(--sage));aspect-ratio:9/18;position:relative;box-shadow:var(--sh);display:flex;flex-direction:column;justify-content:flex-end;padding:26px;text-align:center}
+.ph b{font:500 2.2rem/1 var(--serif);display:block}.ph span{font-size:.85rem;color:var(--mut)}
+.chip{position:absolute;background:#fff;border-radius:16px;padding:12px 16px;font-size:.82rem;box-shadow:var(--sh);text-align:left;line-height:1.35}
+.chip b{font:600 .85rem var(--sans);display:block;color:var(--ink)}
+.c1{left:-70px;top:90px}.c2{right:-70px;bottom:120px}
+.met{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px;text-align:center}
+.met b{font:500 2.6rem/1 var(--serif);color:var(--gt);display:block}.met span{font-size:.9rem;color:var(--mut)}
+.ex .im{height:200px;border-radius:14px;margin-bottom:20px}
+.ex p{color:var(--mut);font-size:.95rem;margin:8px 0 16px}.ex small{font-weight:600;color:var(--gt)}
+.pk{display:flex;flex-direction:column}.pk ul{list-style:none;padding:0;margin:20px 0 28px;flex:1;display:grid;gap:10px;font-size:.95rem}
+.pk li:before{content:"✓";color:var(--ok);font-weight:700;margin-right:10px}.pk li.no{color:var(--mut)}.pk li.no:before{content:"—";color:var(--mut)}
+.pk p{color:var(--mut);font-size:.95rem;margin-top:10px}
+.rec{border:2px solid var(--gold)}.badge{align-self:flex-start;background:var(--gold);color:#fff;font-size:.78rem;font-weight:600;border-radius:999px;padding:4px 14px;margin-bottom:14px}
+.help{margin-top:40px;text-align:center;color:var(--mut)}
+.st{counter-reset:s}.st .card{counter-increment:s}.st .card:before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;font:500 1.3rem var(--serif);margin-bottom:18px}
+.st p{color:var(--mut);margin-top:10px}
+.time{margin-top:28px;background:var(--ink);color:#fff;border-radius:20px;padding:28px 32px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.time b{font:500 2rem var(--serif);color:var(--rose)}.time p{color:#e4dcd2;flex:1;min-width:240px;font-size:.95rem}
+.dash{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--sh)}
+.dash .r{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.dash .r div{background:var(--iv);border-radius:14px;padding:16px;font-size:.8rem;color:var(--mut)}
+.dash .r b{display:block;font:500 2.2rem/1.1 var(--serif);color:var(--ink)}
+.bar{height:8px;border-radius:8px;background:var(--line);margin-top:20px;overflow:hidden}.bar i{display:block;width:78%;height:100%;background:var(--gold)}
+.qr{aspect-ratio:4/3;border-radius:20px;background:linear-gradient(135deg,var(--sage),var(--rose));display:grid;place-items:center;position:relative}
+.qr div{background:#fff;border-radius:16px;padding:18px;text-align:center;font-size:.85rem;color:var(--mut)}
+.qr svg{display:block;margin:0 auto 8px}
+.tb{margin-top:96px}
+.vid{aspect-ratio:16/10;border-radius:20px;background:linear-gradient(135deg,var(--rose),#f3e6dc);display:grid;place-items:center}
+.play{width:72px;height:72px;border-radius:50%;background:#fff;border:0;box-shadow:var(--sh);font-size:1.5rem;color:var(--ink)}
+.q{font:italic 500 1.45rem/1.3 var(--serif);margin:14px 0 22px}.st5{color:var(--gold);letter-spacing:3px}
+.q+p{font-size:.9rem;color:var(--mut)}
+.chk{list-style:none;padding:0;margin:22px 0;display:grid;gap:8px;color:var(--mut)}.chk li:before{content:"✓";color:var(--ok);font-weight:700;margin-right:10px}
+.std{aspect-ratio:5/4;border-radius:20px;background:linear-gradient(160deg,#efe3d6,var(--rose) 60%,var(--sage));display:flex;align-items:flex-end;padding:28px;font:500 2rem var(--serif)}
+details{border-bottom:1px solid var(--line);padding:20px 0}summary{cursor:pointer;font:600 1.05rem var(--sans);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--gt)}details[open] summary::after{content:"−"}
+details p{color:var(--mut);margin-top:12px;max-width:70ch}
+.faq{max-width:820px;margin:0 auto}
+.fin{background:var(--ink);color:#fff;text-align:center}.fin .lead{margin:16px auto 0;color:#e4dcd2}.fin .btns{justify-content:center}
+.fin .btn.o{color:#fff;border-color:#fff}.fin .btn.o:hover{background:#fff;color:var(--ink)}
+footer{background:#fff;border-top:1px solid var(--line);padding:72px 0 32px;font-size:.92rem;color:var(--mut)}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+footer h4{margin:0 0 14px;font:600 .95rem var(--sans);color:var(--ink)}footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+footer a{text-decoration:none}footer a:hover{color:var(--gt)}
+.fb{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.85rem}
+.wa{position:fixed;right:20px;bottom:20px;z-index:30;background:var(--ok);color:#fff;border-radius:999px;min-height:52px;padding:0 22px;display:flex;align-items:center;font-weight:600;text-decoration:none;box-shadow:var(--sh)}
+.hero .g2>*{animation:up .9s ease both}.hero .g2>*:nth-child(2){animation-delay:.2s}
+@keyframes up{from{opacity:0;transform:translateY(18px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+@media(max-width:992px){.g4{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr}.g2{grid-template-columns:1fr;gap:40px}.fg{grid-template-columns:1fr 1fr}.c1{left:-20px}.c2{right:-20px}.hide{display:none}}
+@media(max-width:768px){section{padding:64px 0}.hero{padding:56px 0 48px}.w{padding:0 20px}.nb{display:block}
+nav ul{display:none;position:absolute;left:0;right:0;top:76px;background:#fff;flex-direction:column;padding:12px 20px 24px;border-bottom:1px solid var(--line);gap:0}nav ul.open{display:flex}nav li a{display:block;padding:14px 0}
+.g4,.fg{grid-template-columns:1fr}.btn{width:100%}.met{grid-template-columns:1fr}.c1,.c2{display:none}.fb{flex-direction:column}}
+
+.fv{position:absolute;top:26px;right:26px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:1.25rem;cursor:pointer;color:var(--mut)}
+.fv[aria-pressed=true]{color:#B5475A;border-color:#B5475A}
+.ex{position:relative}.ex .im{height:230px;display:flex;align-items:flex-end;padding:16px;font:500 1.1rem var(--serif);color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.tg{font-size:.85rem;color:var(--gt);font-weight:600;margin-bottom:4px}.ex h3{margin-bottom:0}
+.sub{display:inline-block;font-size:.75rem;background:var(--iv);border:1px solid var(--line);border-radius:999px;padding:2px 12px;color:var(--mut);margin-bottom:10px}
+.bar2{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:28px;color:var(--mut)}
+.bar2 button{background:none;border:0;color:var(--gt);font:600 .95rem var(--sans);cursor:pointer;text-decoration:underline;min-height:44px}
+.note{margin-top:32px;font-size:.88rem;color:var(--mut);text-align:center}
+.pv{position:relative;height:380px}.pv .d{position:absolute;left:0;top:20px;width:82%;height:300px;border-radius:18px;background:linear-gradient(150deg,#1d3557,#6c88a8);box-shadow:var(--sh);padding:22px;color:#fff;font:500 1.7rem var(--serif);display:flex;align-items:flex-end}
+.pv .m{position:absolute;right:0;bottom:0;width:150px;height:290px;border:8px solid var(--ink);border-radius:28px;background:linear-gradient(170deg,#b8a98a,#6f7d5c);box-shadow:var(--sh);padding:14px;color:#fff;font:500 1.2rem var(--serif);display:flex;align-items:flex-end}
+.pk a.row{display:block;text-decoration:none}
+@media(max-width:768px){.pv{height:340px}}
+
+.dd{position:relative}.dd>button{background:none;border:0;font:inherit;color:inherit;cursor:pointer;padding:0;min-height:44px}
+.dd>button:after{content:" ▾";font-size:.75em}.dd>button:hover{color:var(--gt)}
+nav .dm{display:none;position:absolute;top:100%;left:-16px;width:340px;flex-direction:column;gap:0;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--sh);padding:10px;z-index:40}
+.dd.open .dm,.dd:hover .dm{display:flex}
+.dm a{display:block;padding:12px 14px;border-radius:10px}.dm a:hover{background:var(--iv);color:var(--ink)}.dm b{display:block;font-weight:600}.dm span{display:block;font-size:.85rem;color:var(--mut)}
+@media(max-width:768px){nav .dm{position:static;width:auto;box-shadow:none;border:0;padding:0 0 0 12px}.dd:hover .dm{display:none}.dd.open .dm{display:flex}.dd>button{padding:14px 0;width:100%;text-align:left}}
+
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.pill{border-radius:999px;padding:2px 12px;font-size:.78rem;font-weight:600;white-space:nowrap}.ok2{background:#e3f1e6;color:#2f6b3d}.pe{background:#f6ecd5;color:#7a5a17}.no2{background:#f3dcd9;color:#8a3a30}
+.qa{display:grid;gap:10px;margin-top:18px}.qa div{background:var(--iv);border-radius:14px;padding:14px 16px;font-size:.85rem;color:var(--mut)}.qa b{display:block;color:var(--ink);font-size:.95rem}
+.cap{font-size:.82rem;color:var(--mut);margin-top:14px;text-align:center}
+.nt{margin-top:28px;background:#fff;border:1px solid var(--gold);border-radius:20px;padding:24px 28px}
+.tc h3{font-size:1.35rem;margin-bottom:8px}.tc p{color:var(--mut);font-size:.95rem}
+.q2{font:italic 500 1.5rem/1.3 var(--serif);margin:0 0 16px}
+
+.mos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.mos i{display:block;aspect-ratio:1;border-radius:10px;background:var(--rose)}
+.mos i:nth-child(6n+2){background:linear-gradient(150deg,#e9a97a,#c0566b)}.mos i:nth-child(6n+3){background:linear-gradient(150deg,var(--sage),#c9d6ca)}.mos i:nth-child(6n+4){background:linear-gradient(150deg,#9fd3e0,#f2e2c4)}.mos i:nth-child(6n+5){background:linear-gradient(150deg,#d9d3c4,#8d8478)}.mos i:nth-child(6n+6){background:linear-gradient(150deg,#f6e3a6,#d98a4e)}
+.sign{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--sh);padding:36px;text-align:center;max-width:340px;margin:0 auto}
+.sign p{font:italic 500 1.35rem/1.3 var(--serif);margin-top:16px}
+.fx{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:16px}.fx b{display:block}.fx span{color:var(--mut);font-size:.95rem}
+.mm{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px;color:var(--mut)}.mm li{border-left:3px solid var(--gold);padding-left:14px}
+.pk h3 small{display:block;font:600 .8rem var(--sans);color:var(--gt);margin-bottom:6px}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+<a class="logo" href="mi-webdding.html">Mi Webdding</a>
+<nav aria-label="Principal"><ul id="mn">
+<li><a href="mi-webdding.html#como-funciona">Cómo funciona</a></li><li><a href="ejemplos.html">Ejemplos</a></li><li class="dd"><button type="button" aria-haspopup="true" aria-expanded="false">Producto</button><ul class="dm"><li><a href="mi-webdding.html#como-funciona"><b>Invitación digital</b><span>La información de su boda en un enlace personalizado.</span></a></li><li><a href="confirmaciones.html"><b>Confirmaciones e invitados</b><span>Respuestas, pases y mesas desde el panel de PRO y ULTRA.</span></a></li><li><a href="dpix-album-qr.html" aria-current="page"><b>DPix Álbum QR</b><span>Fotos y videos de sus invitados reunidos mediante un QR.</span></a></li><li><a href="save-the-date.html"><b>Save the Date Web</b><span>Compartan la fecha antes de tener todos los detalles.</span></a></li></ul></li><li><a href="paquetes.html">Paquetes</a></li>
+</ul></nav>
+<a class="btn hide" href="https://wa.me/5214423641993?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20para%20mi%20Webdding.">Agendar por WhatsApp</a>
+<button class="nb" aria-label="Abrir menú" aria-expanded="false" onclick="var m=document.getElementById('mn');var o=m.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div></header>
+<main id="top">
+<section class="hero"><div class="w"><div class="g2">
+<div>
+<p class="eb">DPix · Álbum QR para boda</p>
+<h1>Fotos y videos de su boda, reunidos con un QR.</h1>
+<p class="lead">Ustedes viven la boda. Sus invitados capturan las otras miradas. Con DPix, las fotos y videos que ellos comparten llegan a un mismo álbum, para que después los descarguen juntos.</p>
+<div class="btns"><a class="btn" href="https://miwebdding.com/producto/webdding-pro/">Conocer PRO con DPix</a><a class="btn o" href="https://dpix.miwebdding.love/feed/DEMOAPP" target="_blank" rel="noopener">Abrir álbum demo</a></div>
+<ul class="ck"><li>Sin descargar una app</li><li>Fotos y videos sin límite de archivos</li><li>Descarga conjunta</li></ul>
+<p class="lead" style="font-size:.9rem">Incluido en Webdding PRO y ULTRA. No se contrata por separado.</p>
+</div>
+<div><div class="ph" role="img" aria-label="Vista ilustrativa del álbum DPix en un celular"><div class="mos"><i></i><i></i><i></i><i></i><i></i><i></i></div><div style="height:14px"></div><b>DPix</b><span>Las otras miradas de su boda</span></div>
+<p class="cap">El brindis, las selfies, ese baile inesperado. También forman parte de su historia.</p></div>
+</div>
+<div class="met"><div><b>Un QR o un enlace</b><span>Para entrar al álbum desde el celular.</span></div><div><b>Resolución original</b><span>Se conserva la de los archivos compartidos.</span></div><div><b>Todo vuelve a ustedes</b><span>Consulta y descarga desde su panel.</span></div></div>
+</div></section>
+
+<section id="como"><div class="w">
+<div class="hd"><p class="eb">Cómo funciona el álbum colaborativo</p><h2>Un QR en la boda. Muchas miradas en el álbum.</h2><p class="lead">DPix reúne lo que sus invitados deciden compartir. No busca fotos en sus celulares ni las sube automáticamente.</p></div>
+<div class="grid g3 st">
+<div class="card"><h3>Compartan el acceso</h3><p>Coloquen el QR en un lugar visible o envíen el enlace. Ambos abren el álbum asociado a su boda.</p></div>
+<div class="card"><h3>Sus invitados aportan</h3><p>Desde el navegador, indican su nombre y eligen las fotos o videos que quieren subir. Sin app ni cuenta nueva.</p></div>
+<div class="card"><h3>Ustedes descargan</h3><p>Consultan los recuerdos reunidos desde su panel de novios y descargan el contenido en conjunto.</p></div>
+</div>
+<p class="help"><a class="btn o" href="https://dpix.miwebdding.love/feed/DEMOAPP" target="_blank" rel="noopener">Ver el álbum demo</a><br><small>Se abre en otra pestaña. Es un ejemplo público, no el álbum de su boda.</small></p>
+</div></section>
+
+<section class="alt"><div class="w"><div class="grid g2">
+<div><p class="eb">Fácil para sus invitados</p><h2>Que compartir recuerdos no sea otra tarea.</h2><p class="lead">Escanear, abrir y compartir. Sus invitados pueden ver el álbum y aportar sus fotos y videos desde el navegador de su celular, durante la boda o después de la celebración.</p>
+<ul class="fx"><li><b>Sin instalar una aplicación</b><span>El QR o enlace abre la experiencia web.</span></li><li><b>Sin crear una cuenta</b><span>Indican su nombre para compartir sus archivos.</span></li><li><b>Fotos y videos en el mismo lugar</b><span>Sin límite de cantidad de archivos en el álbum.</span></li></ul></div>
+<div><div class="dash" role="img" aria-label="Vista ilustrativa del álbum desde el celular de una invitada"><b style="font:500 1.3rem var(--serif)">Álbum colaborativo</b><div class="mos" style="margin-top:16px"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><p class="cap">Una vista del álbum desde el celular.</p>
+<div class="nt">El álbum se comparte mediante un enlace público. Háganlo llegar a sus invitados y eviten publicarlo en espacios abiertos si quieren limitar su difusión.</div></div>
+</div></div></section>
+
+<section><div class="w"><div class="grid g2">
+<div class="sign" role="img" aria-label="Letrero ilustrativo con código QR"><svg width="150" height="150" viewBox="0 0 8 8" fill="#2B2623" aria-hidden="true" style="display:block;margin:0 auto"><path d="M0 0h3v3H0zM5 0h3v3H5zM0 5h3v3H0zM4 4h1v1H4zM6 5h2v1H6zM5 7h1v1H5zM7 7h1v1H7z"/></svg><p>“Compartan aquí las fotos y videos que tomaron”</p></div>
+<div><p class="eb">Un detalle que invita a participar</p><h2>El QR también puede ser parte de la boda.</h2><p class="lead">Intégrenlo en la papelería o en un letrero que sus invitados encuentren fácilmente. Un mensaje sencillo ayuda: “Compartan aquí las fotos y videos que tomaron”.</p>
+<ul class="chk"><li>Bienvenida o entrada a la recepción.</li><li>Menús, números de mesa o portarretratos.</li><li>Barra, photobooth o espacios de convivencia.</li></ul>
+<p class="lead" style="font-size:.9rem;margin:0">Antes de imprimir, prueben que el QR se lea desde el celular. La imagen muestra una idea de colocación; no implica papelería física incluida.</p></div>
+</div></div></section>
+
+<section class="alt"><div class="w"><div class="grid g2">
+<div><p class="eb">Práctico para ustedes</p><h2>Después de la fiesta, no persigan las fotos.</h2><p class="lead">El contenido que sus invitados suben queda reunido en DPix. Desde su panel de Mi Webdding pueden consultarlo y hacer una descarga conjunta.</p>
+<ul class="chk"><li>Un solo lugar para revisar los recuerdos.</li><li>Archivos en la resolución en que se compartieron.</li><li>Descarga conjunta desde el panel de novios.</li></ul>
+<div class="nt" style="margin:0 0 24px"><b>Disponible hasta un mes después de la boda.</b> Revisen y descarguen sus archivos antes de que termine ese periodo.</div>
+<a class="btn o" href="confirmaciones.html">Conocer el panel de Mi Webdding</a></div>
+<div><div class="dash" role="img" aria-label="Vista ilustrativa de la galería DPix en el panel de novios"><b style="font:500 1.3rem var(--serif)">Galería de recuerdos</b><div class="mos" style="margin-top:16px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><p class="cap">El álbum, también desde su panel. Imagen ilustrativa de producto; no es una demostración interactiva.</p></div>
+</div></div></section>
+
+<section><div class="w"><div class="grid g2">
+<div><p class="eb">La historia que completa su historia</p><h2>Su fotógrafo captura la boda. Sus invitados, su propia mirada.</h2><p class="lead">DPix no reemplaza la fotografía ni el video profesional. Reúne esa otra parte: las reacciones, las selfies, los abrazos y los momentos espontáneos que cada invitado vive a su manera.</p>
+<ul class="mm"><li>La emoción antes de la ceremonia.</li><li>Los brindis desde cada mesa.</li><li>Los encuentros y las selfies.</li><li>Todo lo que pasa en la pista.</li></ul></div>
+<div><div class="mos"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p class="cap">Muchas perspectivas, un mismo álbum. Mosaico ilustrativo.</p></div>
+</div></div></section>
+
+<section class="alt"><div class="w">
+<div class="hd"><p class="eb">Incluido, no un extra por contratar</p><h2>DPix forma parte de PRO y ULTRA.</h2><p class="lead">Sumen el álbum QR a una invitación personalizada y a las herramientas para organizar su boda. BASE no incluye DPix; el álbum no se ofrece por separado.</p></div>
+<div class="grid g2" style="align-items:stretch;gap:28px">
+<article class="card pk rec"><h3><small>Para organizar y guardar recuerdos</small>Webdding PRO</h3><p style="font-weight:600;color:var(--ink)">Invitación, organización y las otras miradas.</p>
+<ul><li>Invitación digital personalizada.</li><li>Sistema de confirmaciones, invitados, pases y mesas.</li><li>DPix Álbum QR para fotos y videos.</li></ul><a class="btn" href="https://miwebdding.com/producto/webdding-pro/">Conocer Webdding PRO</a></article>
+<article class="card pk"><h3><small>La experiencia completa</small>Webdding ULTRA</h3><p style="font-weight:600;color:var(--ink)">La experiencia, desde el Save the Date.</p>
+<ul><li>Todo lo incluido en PRO, también DPix.</li><li>Save the Date Web para compartir la fecha.</li><li>Dominio .COM exclusivo sujeto a disponibilidad.</li></ul><a class="btn o" href="https://miwebdding.com/producto/webdding-ultra/">Conocer Webdding ULTRA</a></article>
+</div>
+<p class="help"><a class="lk" href="paquetes.html">Comparar todos los paquetes y precios →</a></p>
+</div></section>
+
+<section id="faq"><div class="w faq">
+<div class="hd" style="text-align:center"><p class="eb">Preguntas frecuentes</p><h2>Antes de compartir su álbum QR.</h2><p class="lead" style="margin-inline:auto">Lo que necesitan saber sobre el acceso, los archivos y la descarga de los recuerdos.</p></div>
+<details><summary>¿Qué es DPix Álbum QR para boda?</summary><p>Es el álbum colaborativo de Mi Webdding. Sus invitados acceden con un código QR o enlace y comparten las fotos y videos que tomaron. Ustedes consultan y descargan el contenido reunido desde su panel de novios.</p></details>
+<details><summary>¿Los invitados necesitan una app o una cuenta?</summary><p>No. DPix se abre en el navegador del celular. Los invitados indican su nombre y seleccionan los archivos que quieren compartir, sin instalar una aplicación ni crear una cuenta.</p></details>
+<details><summary>¿Se pueden subir fotos y videos? ¿Hay límite de archivos?</summary><p>Sí, pueden compartir fotografías y videos. DPix no establece un límite de cantidad de archivos para el álbum. Esto se refiere al número de archivos, no a que cada archivo individual pueda tener cualquier tamaño.</p></details>
+<details><summary>¿Las fotos conservan su calidad?</summary><p>DPix conserva la resolución original de los archivos que se suben. Si una foto ya fue comprimida o reducida antes de compartirla, el álbum no recupera la calidad que perdió previamente. Lo ideal es subirla directamente desde el dispositivo que la tomó.</p></details>
+<details><summary>¿Pueden descargar todos los recuerdos juntos?</summary><p>Sí. Desde su panel de Mi Webdding pueden consultar el contenido reunido y realizar una descarga conjunta, sin pedir cada archivo en conversaciones separadas.</p></details>
+<details><summary>¿Hasta cuándo está disponible el álbum?</summary><p>El álbum y sus archivos permanecen disponibles hasta un mes después de la boda. Revisen y descarguen su contenido antes de que termine ese periodo para conservarlo en sus propios dispositivos.</p></details>
+<details><summary>¿Quién puede acceder al álbum?</summary><p>DPix usa un enlace público asociado a la boda. Las personas que tengan ese enlace o QR pueden abrir el álbum. No lo traten como una galería protegida por contraseña: compártanlo con sus invitados y cuiden dónde lo publican.</p></details>
+<details><summary>¿DPix se contrata por separado o viene en BASE?</summary><p>No. DPix está incluido en Webdding PRO y ULTRA y funciona conectado con su panel de novios. No está incluido en BASE ni se ofrece como contratación independiente.</p></details>
+<details><summary>¿DPix reemplaza al fotógrafo o videógrafo?</summary><p>No. DPix complementa la cobertura profesional con los momentos que sus invitados eligen capturar y compartir. No toma fotos por sí mismo ni las obtiene automáticamente de sus celulares.</p></details>
+</div></section>
+
+<section class="fin"><div class="w">
+<p class="eb" style="color:var(--rose)">Su boda, también desde las otras miradas</p>
+<h2>Vivan la boda. Reúnan los recuerdos con DPix.</h2>
+<p class="lead">Conozcan PRO para sumar invitación personalizada, organización de invitados y un álbum QR donde compartir las fotos y videos de la celebración.</p>
+<div class="btns"><a class="btn g" href="https://miwebdding.com/producto/webdding-pro/">Conocer PRO con DPix</a><a class="btn o" href="paquetes.html">Comparar paquetes</a></div>
+<p style="margin-top:24px"><a class="lk" style="color:var(--rose)" href="https://wa.me/5214423641993?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20para%20mi%20Webdding.">Agendar por WhatsApp</a> · <a class="lk" style="color:var(--rose)" href="mailto:hola@miwebdding.com?subject=Quiero%20agendar%20una%20asesor%C3%ADa%20para%20mi%20Webdding">Escribir por correo</a></p>
+</div></section>
+</main>
+<footer><div class="w">
+<div class="fg">
+<div><a class="logo" href="mi-webdding.html" style="color:var(--ink)">Mi Webdding</a><p style="margin:12px 0">Invitaciones digitales para boda, personalizadas con sus fotos, colores y detalles. Ustedes la comparten; nosotros la preparamos.</p><p><a href="mailto:hola@miwebdding.com?subject=Quiero%20agendar%20una%20asesor%C3%ADa%20para%20mi%20Webdding">hola@miwebdding.com</a><br><a href="https://wa.me/5214423641993?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20para%20mi%20Webdding.">+52 442 364 1993</a></p></div>
+<div><h4>Mi Webdding</h4><ul><li><a href="paquetes.html">Paquetes y precios</a></li><li><a href="confirmaciones.html">Confirmaciones e invitados</a></li><li><a href="dpix-album-qr.html">DPix · Álbum QR</a></li><li><a href="save-the-date.html">Save the Date Web</a></li></ul></div>
+<div><h4>Descubre</h4><ul><li><a href="ejemplos.html">Ejemplos</a></li><li><a href="https://miwebdding.com/blog/">Ideas para tu boda</a></li><li><a href="https://miwebdding.com/contacto/">Contacto</a></li></ul></div>
+<div><h4>Los acompañamos</h4><ul><li>Personalización incluida</li><li>Acompañamiento real</li><li>Agenden por WhatsApp o correo</li><li>También en David’s Bridal México</li></ul></div>
+</div>
+<div class="fb"><span>© 2026 Mi Webdding. Todos los derechos reservados.</span><span><a href="https://miwebdding.com/terminos-y-condiciones/">Términos</a> · <a href="https://miwebdding.com/aviso-de-privacidad/">Privacidad</a> · <a href="https://miwebdding.com/app/">App</a></span></div>
+</div></footer>
+<a class="wa" href="https://wa.me/5214423641993?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20Mi%20Webdding.">WhatsApp</a>
+<script>
+(function(){var d=document.querySelector('.dd'),b=d.querySelector('button');
+function s(o){d.classList.toggle('open',o);b.setAttribute('aria-expanded',o)}
+b.onclick=function(){s(!d.classList.contains('open'))};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')s(false)});
+document.addEventListener('click',function(e){if(!d.contains(e.target))s(false)})})();
+</script>
+</body>
+</html>
