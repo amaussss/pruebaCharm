@@ -1,0 +1,11 @@
+Mi Webdding - sitio estatico
+============================
+Archivos: index.html (inicio), paquetes.html, ejemplos.html,
+confirmaciones.html, dpix-album-qr.html, save-the-date.html.
+
+Como publicarlo:
+- Netlify Drop: arrastra esta carpeta a https://app.netlify.com/drop
+- Cloudflare Pages / Vercel / GitHub Pages: sube la carpeta tal cual.
+- Hosting con cPanel: sube todo a public_html.
+
+Contacto configurado: WhatsApp +52 442 364 1993 y hola@miwebdding.com
